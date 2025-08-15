@@ -2,6 +2,10 @@
 
 A feature-rich command-line interface for Google's Gemini API with streaming responses, multi-turn conversations, and beautiful terminal formatting.
 
+**Why MyGem?**
+
+This project was born out of a desire for a lightweight, dependency-minimal CLI for Google's Gemini API. While exploring existing options, including the official `gemini-cli`, it often felt too heavy, pulling in a large number of dependencies that weren't strictly necessary for basic command-line interaction. MyGem aims to provide a fast, clean, and self-contained alternative, offering essential features like streaming, multi-turn chat, and beautiful output with virtually zero external dependencies beyond the `requests` library.
+
 ![MyGem in action](terminal-demo.png)
 
 ## Features
