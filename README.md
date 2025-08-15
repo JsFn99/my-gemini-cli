@@ -1,8 +1,8 @@
-# My enhanced Gemini CLI
+# MyGem - Enhanced Gemini CLI
 
 A feature-rich command-line interface for Google's Gemini API with streaming responses, multi-turn conversations, and beautiful terminal formatting.
 
-![Gemini CLI in action](terminal-demo.png)
+![MyGem in action](terminal-demo.png)
 
 ## Features
 
@@ -27,14 +27,14 @@ A feature-rich command-line interface for Google's Gemini API with streaming res
 
 1. **Clone or download the script:**
    ```bash
-   wget https://raw.githubusercontent.com/yourusername/gemini-cli/main/gemini-cli
+   wget https://raw.githubusercontent.com/yourusername/mygem/main/mygem
    # OR
-   curl -O https://raw.githubusercontent.com/yourusername/gemini-cli/main/gemini-cli
+   curl -O https://raw.githubusercontent.com/yourusername/mygem/main/mygem
    ```
 
 2. **Make it executable:**
    ```bash
-   chmod +x gemini-cli
+   chmod +x mygem
    ```
 
 3. **Set your API key:**
@@ -49,22 +49,22 @@ A feature-rich command-line interface for Google's Gemini API with streaming res
 
 5. **Run it:**
    ```bash
-   ./gemini-cli
+   ./mygem
    ```
 
 ### Alternative Installation (System-wide)
 
 ```bash
 # Copy to your local bin directory
-sudo cp gemini-cli /usr/local/bin/
-sudo chmod +x /usr/local/bin/gemini-cli
+sudo cp mygem /usr/local/bin/
+sudo chmod +x /usr/local/bin/mygem
 
 # Add API key to your shell profile
 echo 'export GEMINI_API_KEY="your-api-key-here"' >> ~/.bashrc
 source ~/.bashrc
 
 # Now you can run it from anywhere
-gemini-cli
+mygem
 ```
 
 ## Usage
@@ -74,9 +74,9 @@ gemini-cli
 Start a conversation that remembers context:
 
 ```bash
-./gemini-cli
+./mygem
 # or
-./gemini-cli -i
+./mygem -i
 ```
 
 **Interactive commands:**
@@ -91,35 +91,35 @@ Quick one-off questions:
 
 ```bash
 # Simple prompt
-./gemini-cli -p "Explain quantum computing in simple terms"
+./mygem -p "Explain quantum computing in simple terms"
 
 # With specific model and temperature
-./gemini-cli -p "Write a creative story" -m gemini-1.5-pro -t 0.9
+./mygem -p "Write a creative story" -m gemini-1.5-pro -t 0.9
 
 # Analyze a file
-./gemini-cli -f script.py -p "Review this code for potential issues"
+./mygem -f script.py -p "Review this code for potential issues"
 
 # Process stdin
-cat document.txt | ./gemini-cli -p "Summarize this document"
+cat document.txt | ./mygem -p "Summarize this document"
 
 # Combine file and prompt
-./gemini-cli -f data.csv -p "Analyze this data and find trends"
+./mygem -f data.csv -p "Analyze this data and find trends"
 ```
 
 ### Advanced Options
 
 ```bash
 # Streaming output for single prompts
-./gemini-cli -p "Hello world" --stream
+./mygem -p "Hello world" --stream
 
 # Custom style and parameters
-./gemini-cli -p "Explain AI" -s technical -t 0.3 -x 1000
+./mygem -p "Explain AI" -s technical -t 0.3 -x 1000
 
 # Debug mode for troubleshooting
-./gemini-cli -p "Test" --debug
+./mygem -p "Test" --debug
 
 # Disable colors for scripting
-./gemini-cli -p "Test" --no-color
+./mygem -p "Test" --no-color
 ```
 
 ## Command Line Options
@@ -148,7 +148,7 @@ Popular Gemini models you can use with `-m`:
 - `gemini-1.5-flash` - Fast and efficient for most tasks
 - `gemini-1.0-pro` - Stable, well-tested model
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -166,39 +166,39 @@ export MYGEM_MODEL="gemini-1.5-pro"  # Set default model
 - **0.4 - 0.6**: Balanced creativity and consistency  
 - **0.7 - 1.0**: Creative, varied, exploratory responses
 
-## 💡 Examples
+## Examples
 
 ### Code Review
 ```bash
-./gemini-cli -f app.py -p "Review this Python code for bugs and improvements"
+./mygem -f app.py -p "Review this Python code for bugs and improvements"
 ```
 
 ### Document Analysis
 ```bash
-./gemini-cli -f report.txt -p "Summarize key findings and create action items"
+./mygem -f report.txt -p "Summarize key findings and create action items"
 ```
 
 ### Creative Writing
 ```bash
-./gemini-cli -p "Write a sci-fi short story about time travel" -s creative -t 0.8
+./mygem -p "Write a sci-fi short story about time travel" -s creative -t 0.8
 ```
 
 ### Data Processing
 ```bash
-cat logs.txt | ./gemini-cli -p "Analyze these server logs for errors"
+cat logs.txt | ./mygem -p "Analyze these server logs for errors"
 ```
 
 ### Interactive Learning
 ```bash
 # Start interactive mode and have a conversation
-./gemini-cli -i -m gemini-1.5-pro
+./mygem -i -m gemini-1.5-pro
 You: Explain machine learning
 Assistant: [Detailed explanation...]
 You: Can you give me a practical example?
 Assistant: [Builds on previous context...]
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -210,7 +210,7 @@ export GEMINI_API_KEY="your-key-here"
 
 **"Permission denied"**
 ```bash
-chmod +x gemini-cli
+chmod +x mygem
 ```
 
 **"requests module not found"**
@@ -230,7 +230,7 @@ pip3 install requests
 Use `--debug` to see detailed API communication:
 
 ```bash
-./gemini-cli -p "test" --debug
+./mygem -p "test" --debug
 ```
 
 This shows:
@@ -238,7 +238,7 @@ This shows:
 - Response data and timing
 - Retry attempts and backoff delays
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! This is a single-file Python script designed to be:
 
@@ -252,18 +252,18 @@ Feel free to:
 - Share usage examples
 - Improve documentation
 
-## 📝 License
+## License
 
 MIT License - feel free to use, modify, and distribute as needed.
 
-## 🔗 Links
+## Links
 
 - [Google AI Studio](https://makersuite.google.com/) - Get your API key
 - [Gemini API Documentation](https://ai.google.dev/docs) - Official API docs
-- [GitHub Repository](https://github.com/yourusername/gemini-cli) - Source code
+- [GitHub Repository](https://github.com/yourusername/mygem) - Source code
 
 ---
 
-**Made with ❤️ for the command line**
+**Made for the command line**
 
 *Experience the power of Gemini AI directly in your terminal with streaming responses, conversation memory, and beautiful formatting.*
