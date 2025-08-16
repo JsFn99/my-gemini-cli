@@ -31,14 +31,16 @@ This project was born out of a desire for a lightweight, dependency-minimal CLI 
 
 1. **Clone or download the script:**
    ```bash
-   wget https://raw.githubusercontent.com/yourusername/mygem/main/mygem
+   wget https://raw.githubusercontent.com/JsFn99/my-gemini-cli/blob/main/mygem.py
    # OR
-   curl -O https://raw.githubusercontent.com/yourusername/mygem/main/mygem
+   curl -O https://raw.githubusercontent.com/JsFn99/my-gemini-cli/blob/main/mygem.py
    ```
 
 2. **Make it executable:**
    ```bash
-   chmod +x mygem
+   mkdir -p ~/bin
+   chmod +x mygem.py
+   mv mygem.py ~/bin/mygem
    ```
 
 3. **Set your API key:**
