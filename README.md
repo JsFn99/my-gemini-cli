@@ -197,7 +197,7 @@ cat logs.txt | ./mygem -p "Analyze these server logs for errors"
 ### Interactive Learning
 ```bash
 # Start interactive mode and have a conversation
-./mygem -i -m gemini-1.5-pro
+mygem -i -m gemini-1.5-pro
 You: Explain machine learning
 Assistant: [Detailed explanation...]
 You: Can you give me a practical example?
@@ -266,7 +266,7 @@ MIT License - feel free to use, modify, and distribute as needed.
 
 - [Google AI Studio](https://makersuite.google.com/) - Get your API key
 - [Gemini API Documentation](https://ai.google.dev/docs) - Official API docs
-- [GitHub Repository](https://github.com/yourusername/mygem) - Source code
+- [GitHub Repository](https://github.com/JsFn99/my-gemini-cli) - Source code
 
 ---
 
