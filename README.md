@@ -55,7 +55,7 @@ This project was born out of a desire for a lightweight, dependency-minimal CLI 
 
 5. **Run it:**
    ```bash
-   ./mygem
+   mygem
    ```
 
 ### Alternative Installation (System-wide)
