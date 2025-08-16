@@ -80,9 +80,9 @@ mygem
 Start a conversation that remembers context:
 
 ```bash
-./mygem
+mygem
 # or
-./mygem -i
+mygem -i
 ```
 
 **Interactive commands:**
@@ -97,35 +97,35 @@ Quick one-off questions:
 
 ```bash
 # Simple prompt
-./mygem -p "Explain quantum computing in simple terms"
+mygem -p "Explain quantum computing in simple terms"
 
 # With specific model and temperature
-./mygem -p "Write a creative story" -m gemini-1.5-pro -t 0.9
+mygem -p "Write a creative story" -m gemini-1.5-pro -t 0.9
 
 # Analyze a file
-./mygem -f script.py -p "Review this code for potential issues"
+mygem -f script.py -p "Review this code for potential issues"
 
 # Process stdin
-cat document.txt | ./mygem -p "Summarize this document"
+cat document.txt | mygem -p "Summarize this document"
 
 # Combine file and prompt
-./mygem -f data.csv -p "Analyze this data and find trends"
+mygem -f data.csv -p "Analyze this data and find trends"
 ```
 
 ### Advanced Options
 
 ```bash
 # Streaming output for single prompts
-./mygem -p "Hello world" --stream
+mygem -p "Hello world" --stream
 
 # Custom style and parameters
-./mygem -p "Explain AI" -s technical -t 0.3 -x 1000
+mygem -p "Explain AI" -s technical -t 0.3 -x 1000
 
 # Debug mode for troubleshooting
-./mygem -p "Test" --debug
+mygem -p "Test" --debug
 
 # Disable colors for scripting
-./mygem -p "Test" --no-color
+mygem -p "Test" --no-color
 ```
 
 ## Command Line Options
@@ -176,17 +176,17 @@ export MYGEM_MODEL="gemini-1.5-pro"  # Set default model
 
 ### Code Review
 ```bash
-./mygem -f app.py -p "Review this Python code for bugs and improvements"
+mygem -f app.py -p "Review this Python code for bugs and improvements"
 ```
 
 ### Document Analysis
 ```bash
-./mygem -f report.txt -p "Summarize key findings and create action items"
+mygem -f report.txt -p "Summarize key findings and create action items"
 ```
 
 ### Creative Writing
 ```bash
-./mygem -p "Write a sci-fi short story about time travel" -s creative -t 0.8
+mygem -p "Write a sci-fi short story about time travel" -s creative -t 0.8
 ```
 
 ### Data Processing
@@ -236,7 +236,7 @@ pip3 install requests
 Use `--debug` to see detailed API communication:
 
 ```bash
-./mygem -p "test" --debug
+mygem -p "test" --debug
 ```
 
 This shows:
